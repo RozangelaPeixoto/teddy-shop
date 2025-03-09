@@ -5,7 +5,7 @@
     --background-primary: #F7F2EC;
     --background-secondary: #E1EDE9;
     --background-third: #F0DACD;
-    --backgorund-featured: #BF8B70;
+    --background-featured: #BF8B70;
 
     --button: #89D3D1;
     --border: #C9B079;
@@ -16,6 +16,7 @@ body{
     max-width: 1440px;
     color: var(--text-default);
     font-family: var(--font-default);
+    font-weight: 500;
     margin: 0 auto;
 }
 a{

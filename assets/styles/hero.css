@@ -1,0 +1,33 @@
+.hero{
+    position: relative;
+    h2{
+        font-size: 1.5rem;
+        position: absolute;
+        height: 77px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        
+
+        span{
+            display: inline-block;
+            border-radius: 0 0 60px 60px;
+            border-width: 2px;
+            border-color: var(--border);
+            border-left-style: solid;
+            border-bottom-style: solid;
+        }
+        .hero__title--brown{
+            padding: 25px 56px;
+            margin-left: 15px;
+            border-right-style: solid;
+            background-color: var(--background-featured);
+            color: var(--text-featured);
+        }
+        .hero__title--white{
+            padding-left: 54px;
+            background-color: var(--text-featured);
+            height: calc(100% - 2px);
+        }
+    }
+}
