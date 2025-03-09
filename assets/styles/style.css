@@ -1,27 +1,3 @@
 @import url("./reset.css");
+@import url("./base.css");
 @import url("./header.css");
-
-:root{
-    --text-default: #29180F;
-    --text-featured: #FFFFFF;
-
-    --background-primary: #F7F2EC;
-    --background-secondary: #E1EDE9;
-    --background-third: #F0DACD;
-    --backgorund-featured: #BF8B70;
-
-    --button: #89D3D1;
-    --border: #C9B079;
-
-    --font-default: "Roboto Serif", serif;
-}
-body{
-    max-width: 1440px;
-    color: var(--text-default);
-    font-family: var(--font-default);
-    margin: 0 auto;
-}
-a{
-	text-decoration: none;
-	color: inherit;
-}
