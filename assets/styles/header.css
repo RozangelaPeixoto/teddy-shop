@@ -1,0 +1,97 @@
+.header__top-info{
+    background-color: var(--background-third);
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 68px;
+        height: 40px;
+        a{
+            font-size: .9375rem;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            &:hover{
+                font-weight: 600;
+            }
+            &::after {
+                content: attr(data-text)/"";
+                font-weight: 600;
+                height: 0;
+                overflow: hidden;
+                visibility: hidden;
+            }
+        }
+        
+    }
+}
+
+.header__main-menu{
+    height: 93px;
+    padding-inline: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 36px;
+    }
+    ul.header__nav-list-action{
+        gap: 19px;
+        a{
+            svg{
+                fill: transparent;
+                transition: fill .5s ease-in-out;
+            }
+            &:hover svg{
+                fill: var(--button);
+            }
+        }
+    }
+    .header__nav-list a{
+        position: relative;
+        transition: color .3s ease-in-out;
+        
+        &.nav-link--submenu{
+            margin-right: 20px;
+            &::after{
+                content: url("../images/arrow-down.svg");
+                position: absolute;
+                top: 0px;
+                right: -20px;
+                transition: filter .3s ease-in-out;
+            }
+        }
+        &.nav-link--submenu:hover::after{
+            filter: invert(95%) sepia(36%) saturate(908%) hue-rotate(151deg) brightness(86%) contrast(90%);
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            height: 2px;
+            background-color: var(--button);
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+        }
+        &:hover {
+            color: var(--button);
+            &::before{
+                transform: scaleX(1);
+            }
+        }	
+    }
+    a.header__button{
+        background-color: var(--button);
+        color: var(--text-featured);
+        padding: 8.5px 14px;
+        border-radius: 50px;
+        transition: outline .3s ease-in;
+        &:hover{
+            outline: 2px solid var(--text-default);
+        }
+    }
+}
