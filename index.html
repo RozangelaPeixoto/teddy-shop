@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="it-IT">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <title>Teddy Shop</title>
 </head>
@@ -14,9 +15,9 @@
     <header class="header">
         <section class="header__top-info">
             <ul class="header__list">
-                <li class="header__item"><a href="#" class="header__link" data-text="Hai bisogno di aiuto?">Hai bisogno di aiuto?</a></li>
-                <li class="header__item"><a href="#" class="header__link" data-text="Ottieni subito uno sconto del 10%:Iscriviti alla newsletter">Ottieni subito uno sconto del 10%:Iscriviti alla newsletter</a></li>
-                <li class="header__item"><a href="#" class="header__link" data-text="Informazioni di consegna">Informazioni di consegna</a></li>
+                <li class="header__item"><a href="#" class="header__link" data-text="Hai bisogno di aiuto?">Você precisa de ajuda?</a></li>
+                <li class="header__item"><a href="#" class="header__link" data-text="Ottieni subito uno sconto del 10%:Iscriviti alla newsletter">Ganhe 10% de desconto agora: Assine a newsletter</a></li>
+                <li class="header__item"><a href="#" class="header__link" data-text="Informazioni di consegna">Informações de entrega</a></li>
             </ul>
         </section>
         <nav class="header__main-menu">
@@ -27,10 +28,10 @@
             </h1>
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link nav-link--submenu">Categorie</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Novità</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Carte regalo</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Chi siamo</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link nav-link--submenu">Categorias</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Novidade</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Cartões de presente</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Quem somos</a></li>
             </ul>
             <ul class="header__nav-list-action">
                 <li class="header__nav-item"><a href="#" class="header__nav-link">
@@ -72,14 +73,95 @@
                         </svg>
                     </a></li>
             </ul>
-            <a href="#" class="header__button">Acquista ora</a>
+            <a href="#" class="header__button">Comprar agora</a>
         </nav>
 
     </header>
     <main>
         <section class="hero">
-            <h2><span class="hero__title--white">"Ecco l'offerta GUND: <span class="hero__title--brown">40% di sconto dal 20 aprile al 5 maggio!"</span></span></h2>
+            <h2><span class="hero__title--white">"Aqui está a oferta GUND: <span class="hero__title--brown">40% de desconto de 20 de abril a 5 de maio!"</span></span></h2>
             <img src="./assets/images/hero.png" alt="Ursos de pelúcia">
+        </section>
+        <section class="products">
+            <h1 class="categories__title">Explore e encontre seu favorito na TeddyShop</h1>
+            <p class="products__subtitle">"Estamos animados para apresentar nossa variedade de novos personagens de pelúcia! Descubra a coleção, pronta para ser amada, dada como presente ou se tornar seu novo melhor amigo"</p>
+            <div class="categories__list">
+                <article class="product-card">
+                    <img src="./assets/images/product1.png" alt="" class="product-image">
+                    <h2 class="product-title">Amigos de Fantasia</h2>
+                    <p class="product-description">Coleção de brinquedos de pelúcia míticos e fantásticos: perfeitos para sonhar acordado.</p>
+                </article>
+                <article class="product-card">
+                    <img src="./assets/images/product2.png" alt="" class="product-image">
+                    <h2 class="product-title">Tesouros antigos</h2>
+                    <p class="product-description">Coleção retrô, brinquedos de pelúcia tradicionais e históricos, para um toque de nostalgia.</p>
+                </article>
+                <article class="product-card">
+                    <img src="./assets/images/product3.png" alt="" class="product-image">
+                    <h2 class="product-title">Aventuras Selvagens</h2>
+                    <p class="product-description">Nesta coleção você encontrará brinquedos de pelúcia de animais exóticos para todos os tipos de aventuras.</p>
+                </article>
+            </div>
+            <h2 class="products__title">Compre para a primavera</h2>
+            <div class="products__list">
+                <article class="product-card">
+                    <img src="./assets/images/product7.png" alt="" class="product-image">
+                    <div class="product__info">
+                        <h2 class="product-title">Teddy - 10.5 Orso</h2>
+                        <p class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </p>
+                        <p class="product-price">$24</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="./assets/images/product6.png" alt="" class="product-image">
+                    <div class="product__info">
+                        <h2 class="product-title">Trixy - 8.5 Tricerapoto</h2>
+                        <p class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </p>
+                        <p class="product-price">$30</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="./assets/images/product4.png" alt="" class="product-image">
+                    <div class="product__info">
+                        <h2 class="product-title">Bunny - 10.5 Coniglio</h2>
+                        <p class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </p>
+                        <p class="product-price">$25</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="./assets/images/product5.png" alt="" class="product-image">
+                    <div class="product__info">
+                        <h2 class="product-title">Gigi - 12.5 Giraffa</h2>
+                        <p class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </p>
+                        <p class="product-price">$30</p>
+                    </div>
+                </article>
+            </div>
+            <a href="#" class="products__link">Esplora adesso</a>
         </section>
     </main>
 </body>

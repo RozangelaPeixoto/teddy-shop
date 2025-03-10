@@ -11,6 +11,7 @@
     --border: #C9B079;
 
     --font-default: "Roboto Serif", serif;
+    --font-featured: "Roboto", sans-serif;
 }
 body{
     max-width: 1440px;
