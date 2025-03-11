@@ -26,9 +26,12 @@
         margin-top: 56px;
         article{
             width:390px;
-            border: 3px solid var(--text-featured);
+            border: 4px solid var(--text-featured);
             border-radius: 28px;
-            h2{
+            img{
+                width: 100%;
+            }
+            h3{
                 font-size: 1.5rem;
                 font-weight: 600;
                 margin-block: 20px 12px;
@@ -78,7 +81,7 @@
                 height: 100%;
                 border-radius: 0 0 32px 32px;
                 padding-block-start: 16px;
-                h2{
+                h4{
                     font-size: 1.25rem;
                 }
                 .rating{

@@ -13,8 +13,11 @@
     --font-default: "Roboto Serif", serif;
     --font-featured: "Roboto", sans-serif;
 }
+*{
+    box-sizing: border-box;
+}
 body{
-    max-width: 1440px;
+    width: min(1440px, 100%);
     color: var(--text-default);
     font-family: var(--font-default);
     font-weight: 500;
