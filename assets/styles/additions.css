@@ -1,0 +1,17 @@
+.additions{
+    background-color: var(--background-primary);
+    padding-block: 48px 96px;
+    h1.additions__title{
+        font-size: 3rem;
+        font-weight: 600;
+        &::before{
+            content: "";
+            background: url("../images/heart.svg") no-repeat;
+            height: 60px;
+            width: 65px;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: sub;
+        }
+    }
+}

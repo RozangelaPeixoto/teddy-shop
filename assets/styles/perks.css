@@ -1,6 +1,6 @@
 .perks{
     background-color: var(--background-secondary);
-    padding-block: 64px 72px;
+    padding-block: 64px 120px;
     text-align: center;
     h1{
         font-size: clamp(2rem, calc(1rem + 1vw), 3rem);
@@ -9,14 +9,13 @@
         display: inline-block;
         &::before, &::after{
             content: "";
-            background: url("../images/flower2.svg");
+            background: url("../images/flower2.svg") no-repeat;
             height: 60px;
             width: 60px;
             display: inline-block;
             vertical-align: middle;
             margin-inline: 20px;
         }
-        
     }
     .perks__list{
         display: flex;

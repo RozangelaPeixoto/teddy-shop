@@ -27,12 +27,15 @@
 }
 
 .header__main-menu{
+    position: relative;
     height: 93px;
     padding-inline: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
+    box-shadow: 0px 4px 85px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
     ul{
         display: flex;
         align-items: center;
@@ -89,9 +92,9 @@
         color: var(--text-featured);
         padding: 8.5px 14px;
         border-radius: 50px;
-        transition: outline .3s ease-in;
+        transition: background .3s ease-in;
         &:hover{
-            outline: 2px solid var(--text-default);
+            background-color: var(--border);
         }
     }
 }
