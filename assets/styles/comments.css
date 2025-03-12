@@ -1,0 +1,50 @@
+.comments{
+    h2.products__title.comment__title{
+        background-image: url("../images/heart.svg");
+        background-size: 49px 43px;
+    }
+    .comment__list{
+        padding-top: 32px;
+        display: flex;
+        gap: 32px;
+        article{
+            height: 228px;
+            width: 415px;
+            border-radius: 24px;
+            border: 3px solid var(--border);
+            background-color: var(--text-featured);
+            text-align: left;
+            padding: 26px 32px 20px;
+            line-height: 150%;
+            display: flex;
+            flex-direction: column;
+            blockquote{
+                font-size: 1.125rem;
+                font-weight: 400;
+            }
+            footer{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 56px;
+                width: fit-content;
+                justify-content: center;
+                align-items: flex-start;
+                margin-top: auto;
+                span{
+                    height: 56px;
+                    width: 56px;
+                    border: 1px solid var(--border);
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    font-size: 36px;
+                    text-align: center;
+                    padding-top: 15px;
+                }
+                p{
+                    font-size: .875rem;
+                }
+            }
+        }
+    }
+}

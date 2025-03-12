@@ -75,6 +75,12 @@
                     width: 50%;
                 }
             }
+            &:nth-of-type(2){
+                background-color: var(--background-secondary);
+            }
+            &:last-of-type{
+                background-color: var(--background-third);
+            }
             a{
                 font-weight: 600;
                 &::after{

@@ -2,7 +2,7 @@
     background-color: var(--background-secondary);
     padding-block: 64px 120px;
     text-align: center;
-    h1{
+    .perks__title{
         font-size: clamp(2rem, calc(1rem + 1vw), 3rem);
         font-weight: 600;
         margin-bottom: 52px;
