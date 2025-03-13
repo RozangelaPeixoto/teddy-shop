@@ -29,4 +29,8 @@
             height: calc(100% - 2px);
         }
     }
+    img{
+        width: 100%;
+        display: block;
+    }
 }

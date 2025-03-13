@@ -1,0 +1,83 @@
+footer.footer{
+    background-color: var(--background-third);
+    padding: 40px 60px 0px;
+    position: relative;
+    .newsletter{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 52px;
+        h2{
+            font-size: 2.25rem;
+            line-height: 150%;
+        }
+        p{
+            font-weight: 400;
+            line-height: 150%;
+        }
+        a{
+            font-size: 12px;
+            text-decoration: underline;
+            font-weight: 400;
+            line-height: 150%;
+        }
+        form{
+            margin-bottom: 16px;
+            input{
+                padding: 12px;
+                color: #505050;
+                border: 1px solid #000;
+                font-size: 1rem;
+                margin-right: 8px;
+                &:focus-within{
+                    outline: none;
+                }
+            }
+            button{
+                background-color: var(--background-featured);
+                border: 1px solid #000;
+                cursor: pointer;
+                font-weight: 400;
+                color: var(--text-featured);
+                width: 163px;
+                height: 44px;
+                font-size: 1rem;
+            }
+        }
+    }
+    hr{
+        height: 6px;
+        background-color: var(--border);
+        border: none;
+        margin-bottom: 66px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 48px;
+        ul{
+            width: 185px;
+            li{
+                margin-top: 16px;
+                a{
+                    font-size:.875rem;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+                &:first-of-type{
+                    font-size: 1.125rem;
+                    margin-top: 0;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+    .copyright{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 60px;
+        right: 0;
+        left: 0;
+    }
+}

@@ -1,6 +1,6 @@
 .additions{
     background-color: var(--background-primary);
-    padding-block: 48px 96px;
+    padding-block: 42px 96px;
     h1.additions__title{
         font-size: 3rem;
         font-weight: 600;
