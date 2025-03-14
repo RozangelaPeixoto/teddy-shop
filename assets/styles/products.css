@@ -1,25 +1,25 @@
 .products{
     background-color: var(--background-primary);
     text-align: center;
-    padding-bottom: 72px;
+    padding: 64px 64px 72px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     h1{
-        font-size: 3rem;
+        font-size: clamp(2rem, 3vw, 3rem);
         font-weight: 600;
-        padding-top: 63px;
+        line-height: 120%;
     }
     p.products__subtitle{
         max-width: 960px;
         display: inline-block;
-        font-size: 1.25rem;
+        font-size: clamp(1rem, 3vw, 1.25rem);
         font-weight: 400;
         margin-top: 14px;
-        line-height: 1.875rem;
+        line-height: 150%;
     }
-    article{
+    a{
         box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
     }
     .categories__list{
@@ -28,8 +28,8 @@
         flex-wrap: wrap;
         justify-content: center;
         margin-block: 56px 64px;
-        article{
-            width:390px;
+        a{
+            width: min(390px, 100%);
             border: 4px solid var(--text-featured);
             border-radius: 28px;
             img{
@@ -45,7 +45,11 @@
                 margin-bottom: 26px;
                 font-size: 1rem;
                 font-weight: 400;
-                line-height: 1.875rem;
+                line-height: 150%;
+            }
+            &:hover{
+                border-color: var(--border);
+                background-color: #fff;
             }
         }
     }
@@ -55,11 +59,12 @@
         background-color: var(--text-featured);
         border: 3px solid var(--border);
         border-radius: 60px;
-        font-size: 2.25rem;
+        font-size: clamp(1.5rem, 3vw, 2.25rem);
         font-style: italic;
         background-image: url("../images/flower.png");
         background-position: 14px center;
         background-repeat: no-repeat;
+        line-height: 120%;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
         &.title--absolute{
             position: absolute;
@@ -76,22 +81,21 @@
         &.list--margin{
             margin-block-start: 96px;
         }
-        article{
-            width: 296px;
-            height: 369px;
+        a{
+            width: min(296px, 90%);
             border: 4px solid var(--text-featured);
             border-radius: 37px;
             display: flex;
             flex-direction: column;
             img{
                 object-fit: scale-down;
-                height: 253px;
+                height: 100%;
             }
             .product__info{
                 background-color: var(--text-featured);
-                height: 100%;
+                height: 113px;
                 border-radius: 0 0 32px 32px;
-                padding-block-start: 16px;
+                padding: 16px 8px;
                 h4{
                     font-size: 1.25rem;
                 }
@@ -105,6 +109,10 @@
                     font-size: 1.25rem;
                     font-family: var(--font-featured);
                 }
+            }
+            &:hover{
+                border: 4px solid var(--border);
+                background-color: var(--background-secondary);
             }
         }
     }
@@ -122,4 +130,14 @@
             background-color: var(--button);
         }
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .products{
+        padding: 36px 24px;
+        .categories__list{
+            gap: 32px;
+        }
+    }
+
 }

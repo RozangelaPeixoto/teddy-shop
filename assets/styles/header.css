@@ -1,18 +1,32 @@
-.header__top-info{
+.header__top-info,
+.header__main-menu {
+    padding-inline: clamp(16px, 3%, 64px);
+}
+
+.header-buton-menu,
+.header-label-menu {
+    display: none;
+}
+
+.header__top-info {
     background-color: var(--background-third);
-    ul{
+
+    ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 40px;
-        a{
+
+        a {
             font-size: .9375rem;
             display: inline-flex;
             flex-direction: column;
             align-items: center;
-            &:hover{
+
+            &:hover {
                 font-weight: 600;
             }
+
             &::after {
                 content: attr(data-text)/"";
                 font-weight: 600;
@@ -21,32 +35,36 @@
                 visibility: hidden;
             }
         }
-        
+
     }
 }
 
-.header__main-menu{
+.header__main-menu {
     position: relative;
     height: 93px;
     display: flex;
     align-items: center;
     box-shadow: 0px 4px 85px 0px rgba(0, 0, 0, 0.25);
     z-index: 1;
-    h1{
+
+    h1 {
         margin-right: auto;
     }
-    ul{
+
+    ul {
         display: flex;
         align-items: center;
         gap: 32px;
     }
-    ul.header__nav-list a{
+
+    ul.header__nav-list a {
         position: relative;
         transition: color .3s ease-in-out;
-        
-        &.nav-link--submenu{
+
+        &.nav-link--submenu {
             margin-right: 20px;
-            &::after{
+
+            &::after {
                 content: url("../images/arrow-down.svg");
                 position: absolute;
                 top: 0px;
@@ -54,9 +72,11 @@
                 transition: filter .3s ease-in-out;
             }
         }
-        &.nav-link--submenu:hover::after{
+
+        &.nav-link--submenu:hover::after {
             filter: invert(95%) sepia(36%) saturate(908%) hue-rotate(151deg) brightness(86%) contrast(90%);
         }
+
         &::before {
             content: '';
             position: absolute;
@@ -67,64 +87,66 @@
             transform: scaleX(0);
             transition: transform .3s ease-in-out;
         }
+
         &:hover {
             color: var(--button);
-            &::before{
+
+            &::before {
                 transform: scaleX(1);
             }
-        }	
+        }
     }
-    ul.header__nav-list-action{
+
+    ul.header__nav-list-action {
         gap: 16px;
-        a{
-            svg{
+
+        a {
+            svg {
                 fill: transparent;
                 transition: fill .5s ease-in-out;
             }
-            &:hover svg{
+
+            &:hover svg {
                 fill: var(--button);
             }
         }
     }
-    a.header__button{
+
+    a.header__button {
         margin-left: 60px;
         background-color: var(--button);
         color: var(--text-featured);
         padding: 8.5px 14px;
         border-radius: 50px;
         transition: background .3s ease-in;
-        &:hover{
+
+        &:hover {
             background-color: var(--border);
         }
     }
 }
 
-.header__top-info, 
-.header__main-menu{
-    padding-inline: clamp(16px, 2vw, 64px);
-}
-.header-buton-menu, .header-label-menu {
-    display: none;
-}
-
-
 @media only screen and (max-width: 400px) {
-    .header__nav-list-action li:nth-of-type(4){
+    .header__nav-list-action li:nth-of-type(4) {
         display: none;
     }
 }
 
 @media only screen and (max-width: 960px) {
-    .header__top-info, ul.header__nav-list{
+
+    .header__top-info,
+    ul.header__nav-list {
         display: none;
     }
-    ul.header__nav-list.open{
+
+    ul.header__nav-list.open {
         opacity: 1;
         transform: translateX(0);
         pointer-events: auto;
         visibility: visible;
     }
-    ul.header__nav-list{
+
+    ul.header__nav-list {
         position: absolute;
         right: -1px;
         display: flex;
@@ -140,22 +162,24 @@
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
         pointer-events: none;
-        
-        li{
+
+        li {
             padding: 16px;
         }
     }
-    .header-label-menu{
+
+    .header-label-menu {
         display: block;
         font-size: 26px;
     }
-    .header__nav-list-action li:first-of-type{
+
+    .header__nav-list-action li:first-of-type {
         order: 1;
     }
 }
 
 @media only screen and (max-width: 1280px) {
-    .header__button{
+    .header__button {
         display: none;
     }
 }
