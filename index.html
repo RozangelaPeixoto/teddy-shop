@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <script src="./assets/scripts/main.js" defer></script>
     <title>Teddy Shop</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
                 <a href="#">
                     <img src="./assets/images/logo.png" alt="Logo Teddy Shop">
                 </a>
-            </h1>
+            </h1> 
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
                 <li class="header__nav-item"><a href="#" class="header__nav-link nav-link--submenu">Categorias</a></li>
@@ -34,6 +35,12 @@
                 <li class="header__nav-item"><a href="#" class="header__nav-link">Quem somos</a></li>
             </ul>
             <ul class="header__nav-list-action">
+                <li>
+                    <input type="checkbox" id="menu" class="header-buton-menu">
+                    <label for="menu" class="header-label-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                </li>
                 <li class="header__nav-item"><a href="#" class="header__nav-link">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path

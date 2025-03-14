@@ -4,7 +4,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-inline: 68px;
         height: 40px;
         a{
             font-size: .9375rem;
@@ -29,31 +28,19 @@
 .header__main-menu{
     position: relative;
     height: 93px;
-    padding-inline: 64px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-weight: 500;
     box-shadow: 0px 4px 85px 0px rgba(0, 0, 0, 0.25);
     z-index: 1;
+    h1{
+        margin-right: auto;
+    }
     ul{
         display: flex;
         align-items: center;
-        gap: 36px;
+        gap: 32px;
     }
-    ul.header__nav-list-action{
-        gap: 19px;
-        a{
-            svg{
-                fill: transparent;
-                transition: fill .5s ease-in-out;
-            }
-            &:hover svg{
-                fill: var(--button);
-            }
-        }
-    }
-    .header__nav-list a{
+    ul.header__nav-list a{
         position: relative;
         transition: color .3s ease-in-out;
         
@@ -87,7 +74,20 @@
             }
         }	
     }
+    ul.header__nav-list-action{
+        gap: 16px;
+        a{
+            svg{
+                fill: transparent;
+                transition: fill .5s ease-in-out;
+            }
+            &:hover svg{
+                fill: var(--button);
+            }
+        }
+    }
     a.header__button{
+        margin-left: 60px;
         background-color: var(--button);
         color: var(--text-featured);
         padding: 8.5px 14px;
@@ -96,5 +96,66 @@
         &:hover{
             background-color: var(--border);
         }
+    }
+}
+
+.header__top-info, 
+.header__main-menu{
+    padding-inline: clamp(16px, 2vw, 64px);
+}
+.header-buton-menu, .header-label-menu {
+    display: none;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .header__nav-list-action li:nth-of-type(4){
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .header__top-info, ul.header__nav-list{
+        display: none;
+    }
+    ul.header__nav-list.open{
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+        visibility: visible;
+    }
+    ul.header__nav-list{
+        position: absolute;
+        right: -1px;
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        align-items: flex-start;
+        top: 92px;
+        background-color: var(--background-primary);
+        gap: 16px;
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        pointer-events: none;
+        
+        li{
+            padding: 16px;
+        }
+    }
+    .header-label-menu{
+        display: block;
+        font-size: 26px;
+    }
+    .header__nav-list-action li:first-of-type{
+        order: 1;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .header__button{
+        display: none;
     }
 }

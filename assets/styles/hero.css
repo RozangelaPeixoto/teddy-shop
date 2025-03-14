@@ -2,12 +2,13 @@
     position: relative;
     max-height: 628px;
     h2{
-        font-size: 1.5rem;
+        font-size: clamp(1rem, calc(1rem + 1vw), 1.5rem);
         position: absolute;
         height: 77px;
         right: 0;
         left: 0;
         text-align: center;
+        padding-inline: 16px;
         span{
             display: inline-block;
             border-radius: 0 0 60px 60px;
@@ -26,11 +27,29 @@
         .hero__title--white{
             padding-left: 54px;
             background-color: var(--text-featured);
-            height: calc(100% - 2px);
+            height: calc(100% - 1px);
         }
     }
     img{
         width: 100%;
         display: block;
+        min-height: 420px;
+        object-fit: cover;
     }
+}
+
+@media only screen and (max-width: 1059px) {
+    .hero h2 .hero__title--white{
+        visibility: hidden;
+        line-height: 0;
+        padding-left: 0px;
+    }
+    .hero h2 .hero__title--brown{
+        visibility: visible;
+        line-height: 150%;
+        margin-left: 0;
+        width: 100%;
+        padding: 16px 32px;
+    }
+    
 }
