@@ -91,7 +91,7 @@
             flex-direction: column;
             img{
                 object-fit: scale-down;
-                height: min(100%, 260px);
+                height: min(100%, 254px);
             }
             .product__info{
                 background-color: var(--text-featured);
@@ -139,6 +139,9 @@
         padding: 36px 24px;
         .categories__list{
             gap: 32px;
+        }
+        .products__title.title--absolute{
+            margin-inline: 23px;
         }
     }
 
