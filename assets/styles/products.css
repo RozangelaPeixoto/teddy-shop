@@ -78,18 +78,20 @@
         flex-wrap: wrap;
         justify-content: center;
         margin-block: 64px;
+        width: 100%;
         &.list--margin{
             margin-block-start: 96px;
         }
         a{
-            width: min(296px, 90%);
+            width: min(302px, 90%);
+            height: 375px;
             border: 4px solid var(--text-featured);
             border-radius: 37px;
             display: flex;
             flex-direction: column;
             img{
                 object-fit: scale-down;
-                height: 100%;
+                height: min(100%, 260px);
             }
             .product__info{
                 background-color: var(--text-featured);
