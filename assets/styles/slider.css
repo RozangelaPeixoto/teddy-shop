@@ -34,6 +34,7 @@
     transform: translateX(-200%);
 }
 
+
 .carousel__screen {
     overflow: hidden;
     margin-left: -16px;
@@ -41,7 +42,7 @@
 }
 
 .carousel__track {
-    font-size: 0;
+    /* font-size: 0; */
     transition: all 0.3s ease 0s;
     white-space: nowrap;
 }
@@ -58,7 +59,7 @@
 }
 
 .carousel__item--desktop-in-3 {
-    width: 33.3333333333%;
+    width: 33%;
 }
 
 .nav-dot {
@@ -104,7 +105,7 @@
 
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 720px) {
     .carousel__track {
         padding-left: 0;
         padding-right: 0;
@@ -112,5 +113,12 @@
 
     .carousel__item--mobile-in-1 {
         width: 60%;
+    }
+}
+
+@media screen and (max-width: 544px) {
+
+    .carousel__item--mobile-in-1 {
+        width: 100%;
     }
 }

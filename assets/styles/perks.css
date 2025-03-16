@@ -58,6 +58,7 @@ article.perk {
         font-size: 1.375rem;
         font-weight: 600;
         margin-block: 8px;
+        line-height: 140%;
     }
 
     p {
@@ -73,6 +74,10 @@ article.perk {
         padding: 24px 24px 48px;
         .perks__title{
             margin-bottom: 32px;
+            &::before,
+            &::after{
+                display: none;
+            }
         }
     }
 }

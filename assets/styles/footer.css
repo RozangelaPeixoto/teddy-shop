@@ -1,13 +1,13 @@
-footer.footer{
+.footer{
     background-color: var(--background-third);
-    padding: 40px 60px 0px;
-    position: relative;
     .newsletter{
         display: flex;
         justify-content: space-between;
         margin-bottom: 52px;
+        gap: 32px;
+        padding: 40px 60px 0px;
         h2{
-            font-size: 2.25rem;
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
             line-height: 150%;
         }
         p{
@@ -48,36 +48,75 @@ footer.footer{
         height: 6px;
         background-color: var(--border);
         border: none;
-        margin-bottom: 66px;
+        margin: 0 60px 66px;
     }
     nav{
         display: flex;
         justify-content: space-between;
-        padding-bottom: 48px;
-        ul{
-            width: 185px;
-            li{
-                margin-top: 16px;
-                a{
-                    font-size:.875rem;
-                    font-weight: 400;
-                    line-height: 150%;
-                }
-                &:first-of-type{
-                    font-size: 1.125rem;
-                    margin-top: 0;
-                    margin-bottom: 24px;
-                }
+        padding: 0 60px 48px;
+        li{
+            margin-top: 16px;
+            a{
+                font-size:.875rem;
+                font-weight: 400;
+                line-height: 150%;
+            }
+            &:first-of-type{
+                font-size: 1.125rem;
+                margin-top: 0;
+                margin-bottom: 24px;
             }
         }
     }
     .copyright{
-        position: absolute;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 32px 60px;
-        right: 0;
-        left: 0;
+        background: var(--text-featured);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .newsletter{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    .footer{
+        padding: 0px;
+        hr, nav{
+            display: none;
+        }
+        .copyright, .newsletter{
+            margin: 0;
+            padding: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer{
+        padding: 0px;
+        .newsletter p{
+            font-size: .75rem;
+            
+        }
+        .newsletter button{
+            margin-top: 8px;
+        }
+        hr, nav{
+            display: none;
+        }
+        .copyright {
+            font-size: .625rem;
+            justify-content: center;
+            img{
+                display: none;
+            }
+        }
     }
 }
