@@ -80,7 +80,7 @@
         margin-block: 64px;
         width: 100%;
         &.list--margin{
-            margin-block-start: 96px;
+            margin-block-start: 36px;
         }
         a{
             width: min(302px, 90%);

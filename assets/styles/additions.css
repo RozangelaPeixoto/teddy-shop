@@ -105,21 +105,18 @@
 
 
 @media only screen and (max-width: 1180px) {
-    .additions{
-        h1.additions__title{
-            &::before{
-                display: none;
-            }
-        }
-        .additions__list{
-            grid-template-columns: 2fr 1fr;
-            article{
-                &:nth-of-type(2),
-                &:last-of-type {
-                    grid-template-columns: 100%;
-                    img{
-                        display: none;
-                    }
+    .additions h1.additions__title::before{
+        display: none;
+    }
+    
+    .additions .additions__list{
+        grid-template-columns: 2fr 1fr;
+        article{
+            &:nth-of-type(2),
+            &:last-of-type {
+                grid-template-columns: 100%;
+                img{
+                    display: none;
                 }
             }
         }
