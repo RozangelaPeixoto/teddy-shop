@@ -1,4 +1,3 @@
-
 submenu = document.getElementById("submenu");
 list_submenu = document.querySelector(".nav-link--submenu");
 size_menu = 195;
