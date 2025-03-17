@@ -61,7 +61,7 @@
         border-radius: 60px;
         font-size: clamp(1.5rem, 3vw, 2.25rem);
         font-style: italic;
-        background-image: url("../images/flower.png");
+        background-image: url("../images/icons/flower.png");
         background-position: 14px center;
         background-repeat: no-repeat;
         line-height: 120%;
@@ -69,7 +69,7 @@
         &.title--absolute{
             position: absolute;
             top: -35px;
-            background-image: url("../images/bear.png");
+            background-image: url("../images/icons/bear.png");
         }
     }
     .products__list{

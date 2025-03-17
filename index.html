@@ -29,7 +29,14 @@
             </h1> 
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link nav-link--submenu">Categorias</a></li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link link--submenu" id="submenu">Categorias</a>
+                    <ul class="nav-link--submenu">
+                        <li><a href="#">Fantasia</a></li>
+                        <li><a href="#">Vintage</a></li>
+                        <li><a href="#">Aventura</a></li>
+                    </ul>
+                </li>
                 <li class="header__nav-item"><a href="#" class="header__nav-link">Novidade</a></li>
                 <li class="header__nav-item"><a href="#" class="header__nav-link">Cartões de presente</a></li>
                 <li class="header__nav-item"><a href="#" class="header__nav-link">Quem somos</a></li>
@@ -38,7 +45,8 @@
                 <li>
                     <input type="checkbox" id="menu" class="header-buton-menu">
                     <label for="menu" class="header-label-menu">
-                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-bars" id="close-menu"></i>
+                        <i class="fa-solid fa-xmark" id="open-menu" style="display:none;"></i>
                     </label>
                 </li>
                 <li class="header__nav-item"><a href="#" class="header__nav-link">
@@ -87,7 +95,7 @@
     <main>
         <section class="hero">
             <h2><span class="hero__title--white">"Aqui está a oferta GUND: <span class="hero__title--brown">40% de desconto de 20 de abril a 5 de maio!"</span></span></h2>
-            <img src="./assets/images/hero.png" alt="Ursos de pelúcia">
+            <img src="./assets/images/banner/hero.png" alt="Ursos de pelúcia">
         </section>
 
         <section class="products">
@@ -305,10 +313,10 @@
         </section>
 
         <section class="additions">
-            <h1 class="additions__title">"Adicione um toque especial ao seu bicho de pelúcia"</h1>
+            <h1 class="additions__title">"Dê um toque especial ao seu bicho de pelúcia"</h1>
             <div class="additions__list">
                 <article class="additions-card card--white">
-                    <img src="./assets/images/additions1.png" alt="">
+                    <img src="./assets/images/highlights/additions1.png" alt="">
                     <div class="additions__info">
                         <h2 class="additions-title">Dê um sorriso com nosso cartão presente</h2>
                         <p class="additions-description">Quer presentear, mas está em dúvida sobre a escolha? O vale-presente é a solução perfeita! 
@@ -318,7 +326,7 @@
                     </div>
                 </article>
                 <article class="additions-card card--green">
-                    <img src="./assets/images/additions2.png" alt="">
+                    <img src="./assets/images/highlights/additions2.png" alt="">
                     <div class="additions__info">
                         <h3 class="additions-title">Ofertas especiais da semana</h3>
                         <p class="additions-description">Descontos imperdíveis em alguns dos bichos de pelúcia mais queridos. 
@@ -327,7 +335,7 @@
                     </div>
                 </article>
                 <article class="additions-card card--brown">
-                    <img src="./assets/images/additions3.png" alt="">
+                    <img src="./assets/images/highlights/additions3.png" alt="">
                     <div class="additions__info">
                         <h3 class="additions-title">Personalize sua pelúcia conosco</h3>
                         <p class="additions-description">Torne seu bicho de pelúcia ainda mais especial! Personalize com um nome ou uma data e crie uma 
