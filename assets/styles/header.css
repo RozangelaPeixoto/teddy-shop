@@ -201,6 +201,7 @@
     .header-label-menu {
         display: block;
         font-size: 26px;
+        width: 22px;
     }
 
     .header__nav-list-action li:first-of-type {

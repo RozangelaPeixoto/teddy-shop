@@ -7,10 +7,10 @@ close_menu = document.getElementById("close-menu");
 
 document.getElementById("menu").addEventListener("click", function () {
     document.querySelector(".header__nav-list").classList.toggle("open");
-    open_menu.style.display = (elemento.style.display === "none") ? "block" : "none";
-    close_menu.style.display = (elemento.style.display === "none") ? "block" : "none";
+    open_menu.style.display = (open_menu.style.display === "none") ? "block" : "none";
+    close_menu.style.display = (close_menu.style.display === "none") ? "block" : "none";
 });
-
+   
 if(window.innerWidth-size_menu <= 960){
     submenu.addEventListener("click",  function () {
         list_submenu.classList.toggle("open");
